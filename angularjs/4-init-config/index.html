@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>AngularJS - Inicialização com Arquivo de Configuração</title>
+		<link rel="stylesheet" href="../resources/css/bootstrap.min.css" />
+  	</head>
+  	<body>
+  		<div class="panel panel-primary">
+  			<div class="panel-heading">Inicialização com Arquivo de Configuração</div>
+		 	<div class="panel-body">
+		    	<table class="table table-bordered">
+		  			<thead>
+		  				<tr>
+		  					<th>Server</th>
+		  					<th>GMT</th>
+		  					<th>Date Format</th>
+		  				</tr>
+		  			</thead>
+		  			<tbody>
+		  				<tr data-ng-controller="appCtrl as ctrl">
+		  					<td><span class="label label-default">{{ctrl.url}}</span></td>
+							<td><span class="label label-success">{{ctrl.gmt}}</span></td>
+		  					<td><span class="label label-info">{{ctrl.format}}</span></td>
+		  				</tr>
+		  			</tbody>
+		  		</table>
+		  	</div>
+		</div>
+  		
+  		<script  type="text/javascript" src="../resources/js/angular.min.js"></script>
+  		<script  type="text/javascript" src="../resources/js/angular-sanitize.min.js"></script>
+  		<script type="text/javascript"  src="appCtrl.js"></script>
+  		<!-- <script type="text/javascript"  src="appBoot.js"></script> -->
+  	</body>
+</html>

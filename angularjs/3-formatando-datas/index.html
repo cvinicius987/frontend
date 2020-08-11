@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+	<head>
+    	<title>AngularJS - Formatando Datas</title>
+		<link rel="stylesheet" href="../resources/css/bootstrap.min.css" />
+  	</head>
+  	<body>
+  		<table class="table table-bordered" data-ng-controller="appCtrl as ctrl">
+  			<thead>
+  				<tr>
+  					<th>Formato (dd/MM/yyyy HH:mm:ss)</th>
+  					<th>Formato 2 (Data completa)</th>
+  					<th>Formato 3 (Horário)</th>
+  					<th>Formato 4 (yyyy-MM-dd)</th>
+  				</tr>
+  			</thead>
+  			<tbody>
+  				<tr>
+  					<th>{{ctrl.data | date:"dd/MM/yyyy HH:mm:ss"}}</th>
+					<th>{{ctrl.data | date:"fullDate"}}</th>
+  					<th>{{ctrl.data | date:"HH:mm:ss"}}</th>
+  					<th>{{ctrl.data | date:"yyyy-MM-dd"}}</th>
+  				</tr>
+  			</tbody>
+  		</table>
+  		<script  type="text/javascript" src="../resources/js/angular.min.js"></script>
+  		<script type="text/javascript" src="app.ctrl.js"></script>
+  	</body>
+</html>

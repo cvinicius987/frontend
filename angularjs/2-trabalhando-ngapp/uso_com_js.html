@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html data-ng-app="exemploAngular">
+ 	<head>
+    	<title>AngularJS - Trabalhando com ngApp</title>
+  	</head>
+  	<body data-ng-controller="exemploCtrl as ctrl">
+  		<h2>Exemplo de uso com código JavaScript</h2>
+  		Soma: {{ctrl.soma}}
+  		
+  		<script  type="text/javascript" src="../resources/js/angular.min.js"></script>
+  		<script type="text/javascript">
+			angular.module("exemploAngular", []);
+			
+			angular.module("exemploAngular").controller("exemploCtrl", [function(){
+				this.soma = (1 + 10);
+			}]);
+  		</script>
+  	</body>
+</html>
