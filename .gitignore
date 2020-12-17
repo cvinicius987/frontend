@@ -47,3 +47,5 @@ Thumbs.db
 
 yarn.lock
 .env
+
+.git
